@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/wkc/Documents/2020/Springboard/Springboard/London-Housing-Case-Study/1581459544_Unit_4_Challenge_-_Tier_3.ipynb/venv/bin/python "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pygments.cmdline import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
